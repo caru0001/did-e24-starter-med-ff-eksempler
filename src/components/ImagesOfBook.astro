@@ -1,0 +1,19 @@
+---
+import '../styles/tailwind.css';
+import { Image } from "astro:assets";
+import img1 from '../assets/imgs_of_book/kobenhavnerbilleder_oppefra.jpg';
+import img2 from '../assets/imgs_of_book/kobenhavnerbilleder-sten-simons.jpg';
+import img3 from '../assets/imgs_of_book/kobenhavnerbilleder_aaben_venstre.jpg';
+---
+
+<div class="md:grid grid-cols-3 gap-4">
+<div>
+  <Image src={img2} alt="A description of the image" />
+</div>
+<div>
+<Image src={img1} alt="A description of the image" />
+</div>
+<div>
+<Image src={img3} alt="A description of the image" />
+</div>
+</div>

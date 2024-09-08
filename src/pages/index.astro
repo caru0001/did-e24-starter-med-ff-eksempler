@@ -1,9 +1,27 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
 import Button from '../components/Button.astro';
+import Data from "../components/Data.astro";
+import ImagesOfBook from "../components/ImagesOfBook.astro";
+import Chapters from "../components/Chapters.astro";
+import Reviews from "../components/Reviews.astro";
+import ImagesFromBook from "../components/ImagesFromBook.astro";
+import Author from "../components/Author.astro";
+import Buy from "../components/Buy.astro";
 import Link from '../components/Link.astro';
 ---
 <MainLayout title="Astro, Tailwind, Alpine, Motion One og Animate CSS Starter">
+
+<Hero></Hero>
+<Data></Data>
+<ImagesOfBook></ImagesOfBook>
+<Chapters></Chapters>
+<Reviews></Reviews>
+<ImagesFromBook></ImagesFromBook>
+<Author></Author>
+<Buy></Buy>
+
 	<article class="prose" x-data>
 		<h1>Astro, Tailwind, Alpine, Motion One og Animate CSS</h1>
 		<p>Dette lille site er lavet med små kodestumper, der viser de forskellige frontend frameworks, vi skal bruge i løbet af valgfaget.</p>

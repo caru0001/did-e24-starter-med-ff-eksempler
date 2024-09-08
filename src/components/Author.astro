@@ -1,0 +1,21 @@
+---
+import '../styles/tailwind.css';
+import { Image } from "astro:assets";
+import img from '../assets/imgs_of_book/sten_simons.jpg';
+import Button from '../components/Button.astro'
+---
+
+
+<h2>Forfatteren</h2>
+<div class="md:grid grid-cols-2 gap-4">
+<div>
+    
+  <Image src={img} alt="A description of the image" />
+</div>
+<div>
+<p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
+</p>
+<p>
+Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
+</div>
+</div>

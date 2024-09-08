@@ -1,0 +1,18 @@
+---
+import '../styles/tailwind.css';
+import { Image } from "astro:assets";
+import img from '../assets/imgs_from_book/_6090016.jpeg';
+import Button from '../components/Button.astro'
+---
+
+<div class="md:grid grid-cols-2 gap-4">
+<div>
+  <Image src={img} alt="A description of the image" />
+</div>
+<div>
+<h1>Københavnerbilleder - en guide til hipster foto</h1>
+<p>af Sten Simons</p>
+<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 </p>
+<Button>Køb nu</Button>
+</div>
+</div>
