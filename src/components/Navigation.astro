@@ -1,32 +1,32 @@
 
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-slate-200" >
+<div x-data="{ showmenu: false }" class="p-6 static md:static w-full border-b-2 border-[#CECECE]" >
 <div id="navbar" class="flex flex-row justify-between">
 <div id="logo" class="">
-<a href="#link1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+<a href="#hero"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
 </svg>
 </a>
 </div>
-<nav id="desktopmenu" class="hidden lg:block">
-<ul class="flex flex-row gap-4">
-<li class=""><a href="#" >Københavnerbilleder</a></li>
-<li class=""><a href="#" >Bogens indhold</a></li>
-<li class=""><a href="#" >Forfatteren</a></li>
-<li class=""><a href="#" >Køb nu</a></li>
+<nav id="desktopmenu" class="hidden md:block">
+<ul class="flex flex-row gap-4 font-medium">
+<li class=""><a href="#data" >Københavnerbilleder</a></li>
+<li class=""><a href="#chapters" >Bogens indhold</a></li>
+<li class=""><a href="#author" >Forfatteren</a></li>
+<li class=""><a href="#buy" >Køb nu</a></li>
 </ul>
 </nav>
-<button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+<button id="burgermenu" class="md:hidden mr-4" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 </button>
 </div>
-<nav id="mobilmenu" class="flex flex-col content-center pt-4" 
+<nav id="mobilmenu" class="flex flex-col content-center pt-4 pr-4 font-medium" 
 x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-<ul >
-<li class="text-center py-2 border-y-2"><a href="#" >Københavnerbilleder</a></li>
-<li class="text-center py-2 border-b-2"><a href="#" >Bogens indhold</a></li>
-<li class="text-center py-2 border-b-2"><a href="#" >Forfatteren</a></li>
-<li class="text-center py-2 border-b-2"><a href="#" >Køb nu</a></li>
+<ul>
+<li class="text-right py-2 border-y-2"><a href="#data" >Københavnerbilleder</a></li>
+<li class="text-right py-2 border-b-2"><a href="#chapters" >Bogens indhold</a></li>
+<li class="text-right py-2 border-b-2"><a href="#author" >Forfatteren</a></li>
+<li class="text-right py-2 border-b-2"><a href="#buy" >Køb nu</a></li>
 </ul>
 </nav>
 </div>

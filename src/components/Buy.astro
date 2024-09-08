@@ -1,9 +1,10 @@
 ---
 import '../styles/tailwind.css';
+import Button from '../components/Button.astro'
 
 ---
-
-<h2>Køb bogen</h2>
+<section id="buy">
+<h2 class="text-3xl font-semibold mb-5">Køb bogen</h2>
    <form action="#" method="POST">
             <div class="mb-4">
                 <label for="name" class="block text-sm font-medium text-gray-700">Navn</label>
@@ -32,3 +33,5 @@ import '../styles/tailwind.css';
             </div>
         </form>
     </div>
+    <Button>Køb nu</Button>
+</section>
